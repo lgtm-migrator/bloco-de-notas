@@ -4,26 +4,18 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="{{ '/assets/main.css' | url }}" />
-    <title>Bloco de Notas por Tiago Celestino</title>
+    <title>Bloco de Notas por @tcelestino</title>
   </head>
-
   <body>
-    <header class="site-header">
-      <div class="wrapper">
-        <div class="top">
-          <h1 class="top__title"><a href="{{ '/' | url }}">Blocos de Notas</a></h1>
-        </div>
-      </div>
+    <header class="top">
+      <h1><a href="{{ '/' | url }}">Blocos de Notas</a></h1>
+      <h2>Anotações para mim mesmo, mas se tiver interesse em ler, fique à vontade!</h2>
     </header>
-
-    <main class="page-content">
-      <div class="wrapper">{{ content }}</div>
+    <main class="content">
+      {{ content }}
     </main>
-
-    <footer class="site-footer">
-      <div class="wrapper">
-        <small>with Eleventy and GitHub Actions 🚀</small>
-      </div>
+    <footer class="footer">
+      <small>using <a href="https://11y.com" rel="nofollow">Eleventy</a></small>
     </footer>
   </body>
 </html>
